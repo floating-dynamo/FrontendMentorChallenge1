@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        color: #fff;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 400px;
+        height: 400px;
+        padding: 65px 0 80px 0;
+        position: relative;
+      }
+      .card-img {
+        position: absolute;
+        top: 45px;
+        left: 60px;
+      }
+      .card1 {
+        background: hsl(31, 77%, 52%);
+      }
+      .card2 {
+        background: hsl(184, 100%, 22%);
+      }
+      .card3 {
+        background: hsl(179, 100%, 13%);
+      }
+      .card-title {
+        padding: 50px 50px 0 50px;
+        font-family: "Big Shoulders Display", cursive;
+      }
+      .card-content {
+        padding: 50px;
+        line-height: 2;
+        font-size: 18px;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      .card-footer {
+        width: 100px;
+        padding: 50px;
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        border-radius: 40px;
+        border: #fff solid 2px;
+        display: inline-block;
+        padding: 14px 28px;
+        text-align: center;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      .card-footer:hover {
+        cursor: pointer;
+      }
+      .footer {
+        padding: 50px;
+        text-align: center;
+        color: black;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      a:hover {
+        color: #777;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card1">
+        <img class="card-img" src="images/icon-sedans.svg" alt="sedans" />
+        <h1 class="card-title">Sedans</h1>
+        <p class="card-content">
+          Choose a sedan for its affordability and excellent fuel economy.Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <div class="card-footer">Learn More</div>
+      </div>
+      <div class="card card2">
+        <img class="card-img" src="images/icon-suvs.svg" alt="sedans" />
+        <h1 class="card-title">SUVs</h1>
+        <p class="card-content">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <div class="card-footer">Learn More</div>
+      </div>
+      <div class="card card3">
+        <img class="card-img" src="images/icon-luxury.svg" alt="sedans" />
+        <h1 class="card-title">Luxury</h1>
+        <p class="card-content">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <div class="card-footer">Learn More</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://github.com/floating-dynamo"
+        >Sridhar Maskeri</a
+      >.
+    </div>
+  </body>
+</html>
